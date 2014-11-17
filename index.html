@@ -11,29 +11,58 @@
 
 
     <link rel="stylesheet" href="lib/angular-material/angular-material.css">
-    <link rel="stylesheet" href="lib/angular-material/themes/blue-grey-theme.css">
+    <link rel="stylesheet" href="lib/angular-material/themes/deep-orange-theme.css">
+    <link rel="stylesheet" href="lib/components-font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="lib/css/css.css">
 
     <script src="app/app.js"></script>
+    <script src="app/controllers.js"></script>
+    <script src="app/directives.js"></script>
 </head>
-<body ng-controller="test" md-swipe-right="leftMenu()" md-swipe-right="leftMenu()">
+<body ng-controller="test" md-swipe-right="leftMenu()" md-swipe-left="leftMenu()">
 
-<md-sidenav component-id="left" class="md-sidenav-left">
-    <md-toolbar class="md-theme-indigo">
-        <h1 class="md-toolbar-tools">Sidenav Left</h1>
-    </md-toolbar>
-</md-sidenav>
+<md-toolbar class="md-deep-orange-theme">
+    <div layout="vertical" layout-sm="horizontal">
 
-<md-content>
+        <div flex>
+        </div>
 
-    <section layout="vertical" layout-sm="horizontal" layout-align="center center">
-        <md-button ng-click="openLeftMenu()">Openmenus</md-button>
-        <md-button noink class="md-primary">Primary (noink)</md-button>
-        <md-button ng-disabled="isDisabled" class="md-primary">Disabled</md-button>
-        <md-button class="md-warn" ng-click="isDisabled = !isDisabled">{{title4}}</md-button>
-        <div class="label">flat</div>
+        <div flex layout="horizontal" layout-align="center">
+            Articles
+        </div>
+
+        <div flex layout="horizontal" layout-align="end">
+            <md-button>
+                <icon class="fa fa-bars"></icon>
+            </md-button>
+        </div>
+
+    </div>
+</md-toolbar>
+
+<slidemenu></slidemenu>
+
+<md-content class="md-padding">
+    <section layout="vertical" layout-sm="horizontal">
+
+        <md-list role="list" ng-controller="GetArticlesCtrl">
+            <md-item ng-repeat="r in result">
+                <md-item-content>
+                    <div class="md-tile-left">
+                        <md-button class="md-primary md-raised">View article</md-button>
+                    </div>
+                    <div class="md-tile-content">
+                        <h3></h3>
+                        <h4></h4>
+                        <p>
+                            {{r.title}} | {{r.id}}
+                        </p>
+                    </div>
+                </md-item-content>
+            </md-item>
+        </md-list>
+
     </section>
-
 </md-content>
 
 </body>
