@@ -6,7 +6,7 @@
  * Created by Christoffer on 23-10-2014.
  */
 /* URL */
-var API_URL               = '192.168.0.55/joomlaapp';
+var API_URL               = '192.168.0.51/joomlaapp';
 var API_REQUEST           = '/index.php?option=com_webitall_app&task=api.request';
 
 /* REGEX */

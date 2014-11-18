@@ -28,13 +28,11 @@
         </div>
 
         <div flex layout="horizontal" layout-align="center">
-            Articles
+            <h1 class="md-toolbar-tools">Articles</h1>
         </div>
 
         <div flex layout="horizontal" layout-align="end">
-            <md-button>
-                <icon class="fa fa-bars"></icon>
-            </md-button>
+            <h1 class="md-toolbar-tools"><icon class="fa fa-bars fa-fw"></icon></h1>
         </div>
 
     </div>
@@ -49,13 +47,13 @@
             <md-item ng-repeat="r in result">
                 <md-item-content>
                     <div class="md-tile-left">
-                        <md-button class="md-primary md-raised">View article</md-button>
+                        <!--<md-button class="md-primary md-raised">View article</md-button>-->
                     </div>
                     <div class="md-tile-content">
-                        <h3></h3>
+                        <h3>{{r.title}}</h3>
                         <h4></h4>
                         <p>
-                            {{r.title}} | {{r.id}}
+                            {{r.id}}
                         </p>
                     </div>
                 </md-item-content>
