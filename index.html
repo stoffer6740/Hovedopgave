@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="joomlaapp">
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="height=device-height, width=device-width" />
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="lib/onsenui/build/css/onsen-css-components.css">
+    <link rel="stylesheet" type="text/css" href="lib/onsenui/build/css/onsenui.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+
+    <script src="lib/onsenui/build/js/angular/angular.min.js"></script>
+    <script src="lib/onsenui/build/js/angular/angular-animate.js"></script>
+    <script src="lib/onsenui/build/js/angular/angular-touch.js"></script>
+    <script src="lib/onsenui/build/js/angular/angular-resource.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="lib/onsenui/build/js/onsenui.min.js"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+
+
+    <script src="js/variables.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
+
+    <title>Joomlaapp</title>
+</head>
+
+<body ng-controller="AppCtrl">
+<ons-page>
+
+<ons-navigator var="navigation">
+    <ons-sliding-menu
+            menu-page="template_view/MenuTemplate.html" main-page="template_view/_viewArticles.html" side="left"
+            type="reveal" max-slide-distance="80%" swipable="true" var="menu">
+    </ons-sliding-menu>
+</ons-navigator>
+
+</ons-page>
+</body>
+</html>

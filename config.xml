@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="dk.cbjerregaard.joomlaapp"
+        version="0.0.1"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Joomlaapp</name>
+
+    <description>
+        Application for fetching contacts and articles from a Joomla CMS installation
+    </description>
+
+    <author email="cbj@c-bjerregaard.dk" href="http://www.c-bjerregaard.dk">
+        Christoffer Bjerregaard
+    </author>
+
+    <content src="index.html" />
+
+    <access origin="http://192.168.0.52/*" subdomains="true"/>
+</widget>
