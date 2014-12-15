@@ -1,0 +1,202 @@
+.hover {
+  border-bottom: 1px solid #dd2923;
+}
+.margin {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.img-transition {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.header {
+  background-color: #f7f7f7;
+  padding: 5px;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header h2 {
+  font-size: 1.2em;
+}
+.list div div {
+  border-bottom: 1px solid #ddd;
+  background-color: #fdfdfd;
+  margin: 0;
+  height: 50px;
+  padding-right: 10px;
+}
+.list div div .list_img {
+  padding: 0;
+  float: left;
+  border: none;
+  border-radius: 5px;
+}
+.list div div p {
+  color: #3a3a3a;
+  margin: 0;
+  padding: 15px;
+}
+.list div div i {
+  float: right;
+  opacity: 0.5;
+}
+.list div div:active {
+  background-color: #f7f7f7;
+}
+.list div div:last-child {
+  border: none;
+}
+#users div div {
+  margin: 5px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  padding: 5px;
+}
+#users div div p {
+  margin: 0;
+  color: #3a3a3a;
+}
+#users div div ._p {
+  margin: .5em;
+}
+/* List of articles */
+#articles div div {
+  margin: 5px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  padding: 5px;
+}
+#articles div div p {
+  margin: 0;
+  color: #3a3a3a;
+}
+#articles div div ._p {
+  margin: .5em;
+}
+#a-img-wrapper {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  height: 50px;
+  overflow: hidden;
+  opacity: 0.5;
+}
+#a-img-wrapper div {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  height: 70px;
+  background-position: 50%;
+  position: relative;
+}
+#a-img-wrapper:active {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  height: 200px;
+  overflow: hidden;
+  opacity: 1;
+}
+#a-img-wrapper:active #a-img:active {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  height: 220px;
+  background-position: 50%;
+  position: relative;
+}
+/* View one article */
+#one-article {
+  padding: 0 10px;
+}
+#one-article #pub {
+  color: #aaaaaa;
+}
+#one-article h1 {
+  margin: 10px 0 0 0;
+  font-size: 1.5em;
+}
+#one-article img {
+  width: 100%;
+  height: auto;
+}
+#one-article table {
+  width: 100%;
+}
+#contact-img {
+  width: 100%;
+}
+.one-contact ons-list li {
+  font-weight: bold;
+}
+.one-contact ons-list ons-list-item ons-row ons-col p {
+  margin: 0;
+}
+/* Menu */
+.page--menu-page .page__content {
+  background-color: #333333;
+}
+.page--menu-page .page__content .list {
+  border: none;
+}
+.page--menu-page .page__content .list .list__item,
+.page--menu-page .page__content .list .list__item--chevron:before {
+  background-color: #333333;
+  color: white;
+  height: 45px;
+  line-height: 45px;
+}
+.page--menu-page .page__content .list .list__item {
+  border-bottom: 1px solid #474747;
+}
+.page--menu-page .page__content .list .list__item:last-child {
+  border-top: 1px solid #474747;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+/* End */
+.list_link {
+  border-bottom: 1px solid #ddd !important;
+}
+.link_style {
+  text-decoration: none !important;
+}
+.link_style:hover {
+  text-decoration: none !important;
+}
+.cont-email p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.m_arr {
+  color: #333333;
+}
+.round-img {
+  text-align: center;
+}
+.round-img img {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(1, 1, 1, 0.5);
+  box-shadow: 0 2px 5px 0 rgba(1, 1, 1, 0.5);
+  width: 100%;
+}

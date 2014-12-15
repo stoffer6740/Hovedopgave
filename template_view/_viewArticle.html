@@ -1,0 +1,19 @@
+<ons-page ng-controller="GetOneArticleCtrl">
+    <div ng-repeat="r in result">
+        <article-header></article-header>
+        <div ng-repeat="i in images" ng-hide="!i.image" class="round-img">
+            <img src="{{i.image}}">
+            <!--<div id="a-img" style="background: url('{{i.image}}') center; background-size: cover;"></div>-->
+        </div>
+
+        <div id="one-article">
+            <p id="pub">{{translation.published}} {{date | date:'d/M/yyyy'}}</p>
+
+            <div ng-bind-html="introtext"></div>
+            <div ng-bind-html-unsafe="introtext"></div>
+
+            <div>{{r.introtext}}</div>
+
+        </div>
+    </div>
+</ons-page>

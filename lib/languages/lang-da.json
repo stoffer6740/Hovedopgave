@@ -1,0 +1,14 @@
+{
+    "contactPage"   :"Kontakter",
+    "articlePage"   :"Artikler",
+    "indexPage"     :"Index",
+    "userPage"      :"Brugere",
+
+    "contactMenu"   :"Vis kontakter",
+    "articleMenu"   :"Vis artikler",
+    "indexMenu"     :"Forside",
+    "userMenu"      :"Vis brugere",
+    "languageMenu"  :"Skift sprog",
+
+    "published"     :"Udgivet den:"
+}

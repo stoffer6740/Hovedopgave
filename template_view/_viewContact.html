@@ -1,0 +1,86 @@
+<ons-page  ng-controller="GetOneContactCtrl">
+    <div ng-repeat="r in result" ng-hide="!result"  >
+<contact-header></contact-header>
+    <div id="ar" class="one-contact">
+    <ons-list>
+
+        <img ng-hide="!i.image" id="contact-img" ng-repeat="i in images" src="{{i.image}}">
+
+        <li class="list__header">
+            Name
+        </li>
+        <ons-list-item class="list-item-container">
+            <ons-row>
+                <ons-col>
+                    {{r.name}}
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+
+        <ons-list-item ng-hide="!r.suburb" class="list-item-container">
+            <ons-row>
+                <ons-col>
+                    <p ng-hide="!r.address">{{r.address}}</p>
+                    <p ng-hide="!r.postcode">{{r.postcode}}, {{r.suburb}}</p>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+
+        <li class="list__header">
+            Contact
+        </li>
+
+
+        <ons-list-item ng-hide="!r.webpage" class="list-item-container" modifier="chevron">
+            <ons-row>
+                <ons-col>
+                    {{r.webpage}}
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+
+        <a href="mailto:{{r.email_to}}" class="link_style">
+        <ons-list-item ng-hide="!r.email_to" class="list_link" modifier="chevron">
+            <ons-row>
+                <ons-col class="cont-email">
+                    <p>{{r.email_to}}</p>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+        </a>
+
+        <a href="tel:{{r.telephone}}" class="link_style">
+        <ons-list-item ng-hide="!r.telephone" class="list_link" modifier="chevron">
+            <ons-row>
+                <ons-col class="cont-email">
+                    <p>{{r.telephone}}</p>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+        </a>
+
+        <a href="tel:{{r.mobile}}" class="link_style">
+        <ons-list-item ng-hide="!r.mobile" class="list_link" modifier="chevron">
+            <ons-row>
+                <ons-col class="cont-email">
+                    <p>{{r.mobile}}</p>
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+        </a>
+
+        <li class="list__header">
+            Misc
+        </li>
+
+        <ons-list-item class="list-item-container">
+            <ons-row>
+                <ons-col ng-bind-html="r.misc">
+                </ons-col>
+            </ons-row>
+        </ons-list-item>
+
+    </ons-list>
+    </div>
+    </div>
+</ons-page>

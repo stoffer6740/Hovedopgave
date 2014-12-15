@@ -1,0 +1,14 @@
+{
+    "contactPage"   :"Contacts",
+    "articlePage"   :"Articles",
+    "indexPage"     :"Index",
+    "userPage"      :"Users",
+
+    "contactMenu"   :"Show contacts",
+    "articleMenu"   :"Show articles",
+    "indexMenu"     :"Frontpage",
+    "userMenu"      :"Show users",
+    "languageMenu"  :"Change language",
+
+    "published"     :"Published:"
+}

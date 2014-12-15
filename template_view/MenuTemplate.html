@@ -1,0 +1,65 @@
+<ons-page modifier="menu-page">
+    <ons-list ng-controller="MenuCtrl">
+
+        <ons-list-item
+                modifier="chevron"
+                ng-click="ons.slidingMenu.setMainPage('template_view/_viewIndex.html', {closeMenu: true})">
+
+                <span class="fa-stack fa-lg m_arr">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-language fa-stack-1x fa-inverse"></i>
+                </span> &nbsp; {{translation.indexMenu}}
+        </ons-list-item>
+
+        <ons-list-item
+                modifier="chevron"
+                ng-click="ons.slidingMenu.setMainPage('template_view/_viewUsers.html', {closeMenu: true})">
+
+                <span class="fa-stack fa-lg m_arr">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-language fa-stack-1x fa-inverse"></i>
+                </span> &nbsp; {{translation.userMenu}}
+        </ons-list-item>
+
+        <ons-list-item
+                modifier="chevron"
+                ng-click="ons.slidingMenu.setMainPage('template_view/_viewContacts.html', {closeMenu: true})">
+
+                <span class="fa-stack fa-lg m_arr">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-language fa-stack-1x fa-inverse"></i>
+                </span> &nbsp; {{translation.contactMenu}}
+        </ons-list-item>
+
+        <ons-list-item
+                modifier="chevron"
+                ng-click="ons.slidingMenu.setMainPage('template_view/_viewArticles.html', {closeMenu: true})">
+
+                <span class="fa-stack fa-lg m_arr">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-language fa-stack-1x fa-inverse"></i>
+                </span> &nbsp; {{translation.articleMenu}}
+        </ons-list-item>
+
+        <ons-list-item
+                modifier="chevron"
+                ng-click="ons.slidingMenu.setMainPage('template_view/_viewLanguage.html', {closeMenu: true})">
+
+                <span class="fa-stack fa-lg m_arr">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-language fa-stack-1x fa-inverse"></i>
+                </span> &nbsp; {{translation.languageMenu}}
+        </ons-list-item>
+
+        <!--<ons-list-item ng-repeat="r in result"-->
+                <!--modifier="chevron"-->
+                <!--ng-click="ons.slidingMenu.setMainPage('template_view/_viewGenerated.html', {closeMenu: true})">-->
+
+                <!--<span class="fa-stack fa-lg m_arr">-->
+                  <!--<i class="fa fa-square fa-stack-2x"></i>-->
+                  <!--<i class="fa fa-language fa-stack-1x fa-inverse"></i>-->
+                <!--</span> &nbsp; {{r.title}}-->
+        <!--</ons-list-item>-->
+
+    </ons-list>
+</ons-page>
